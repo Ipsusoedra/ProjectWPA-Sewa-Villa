@@ -1,0 +1,67 @@
+<div id="container-user d-flex flex-row justify-content-between px-3 py-4">
+  <!-- start content welcome user -->
+  <div class="container-user d-flex justify-content-between align-items-center px-3 py-2 bg-warning">
+    <h5 class="text-white"><b>ROCKPAD</b></h5>
+    <a href="" class="text-decoration-none">
+      <i class="fi fi-rr-comments text-white" style="font-size: 28px"></i>
+    </a>
+  </div>
+  <!-- end content welcome user -->
+
+  <!-- end content form search -->
+  <!-- start content product list -->
+  <div class="container-products w-100 p-0 m-0">
+    <div class="title text-center px-3 pt-4 text-warning m-0">
+      <h6>Form Transaksi</h6>
+      <hr style="background-color: #ffb534" />
+    </div>
+    <div id="load_data" class="container-product d-flex justify-content-start d-flex w-100 flex-wrap px-2 py-2 border border-warning">
+      <form id="form-barang" class="w-100">
+        <div class="modal-body">
+          <input class="d-none" id="villa_id" name="villa_id" />
+          <div class="form-group w-100 d-flex justify-content-center align-items-center">
+            <label style="font-size: 12px; font-weight: bold" class="w-50 text-secondary">Username</label>
+            <input class="form-control w-50" type="text" id="user_id" name="user_id" style="font-size: 12px; font-weight: normal" required readonly />
+          </div>
+          <div class="form-group w-100 d-flex justify-content-center align-items-center">
+            <label style="font-size: 12px; font-weight: bold" class="w-50 text-secondary">Nama villa</label>
+            <input class="form-control w-50" type="text" id="villa_id" name="villa_id" style="font-size: 12px; font-weight: normal" required readonly />
+          </div>
+          <div class="form-group w-100 d-flex justify-content-center align-items-center">
+            <label style="font-size: 12px; font-weight: bold" class="w-50 text-secondary">Metode pembayaran</label>
+            <select class="form-select form-select-sm w-50 border border-secondary" aria-label=".form-select-sm example" style="font-size: 12px; font-weight: normal" name="payment_id" id="payment_id" required readonly>
+              <option class="text-secondary" selected>Open this select menu</option>
+              <option class="text-secondary" value="1">One</option>
+              <option class="text-secondary" value="2">Two</option>
+              <option class="text-secondary" value="3">Three</option>
+            </select>
+          </div>
+          <div class="form-group w-100 d-flex justify-content-center align-items-center">
+            <label style="font-size: 12px; font-weight: bold" class="w-50 text-secondary">Jumlah orang</label>
+            <input class="form-control w-50" type="text" id="jumlah_orang" name="jumlah_orang" style="font-size: 12px; font-weight: normal" required readonly />
+          </div>
+          <div class="form-group w-100 d-flex justify-content-center align-items-center">
+            <label class="" style="font-size: 12px; font-weight: bold" class="w-50">Harga charge</label>
+            <input class="form-control w-50" type="text" id="harga_charge" name="harga_charge" style="font-size: 12px; font-weight: normal" required readonly />
+          </div>
+          <div class="form-group w-100 d-flex justify-content-center align-items-center">
+            <label class="" style="font-size: 12px; font-weight: bold" class="w-50">Total transaksi</label>
+            <input class="form-control w-50" type="text" id="transaksi_total" name="transaksi_total" style="font-size: 12px; font-weight: normal" required readonly />
+          </div>
+          <div class="form-group w-100 d-flex justify-content-center align-items-center">
+            <label class="" style="font-size: 12px; font-weight: bold" class="w-50">Kode transaksi</label>
+            <input class="form-control w-50" type="text" id="transaksi_kode" name="transaksi_kode" style="font-size: 12px; font-weight: normal" required readonly />
+          </div>
+          <div class="form-group w-100 d-flex justify-content-center align-items-center">
+            <label class="" style="font-size: 12px; font-weight: bold" class="w-50">Tanggal transaksi</label>
+            <input class="form-control w-50" type="text" id="transaksi_tanggal" name="transaksi_tanggal" style="font-size: 12px; font-weight: normal" required readonly />
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button style="font-size: 12px; font-weight: normal" type="submit" id="btnSubmit" class="btn btn-warning text-white" onclick="simpanVilla();">Bayar sekarang</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- end content product list -->
+</div>

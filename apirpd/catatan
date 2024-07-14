@@ -1,0 +1,4 @@
+SELECT tb_transaksi.transaksi_id, tb_user.user_nama, tb_payment.payment_gambar,tb_payment.payment_harga, tb_villa.villa_nama, tb_villa.villa_harga, tb_transaksi.jumlah_orang, tb_transaksi.harga_charge, tb_transaksi.transaksi_total, tb_transaksi.transaksi_kode, tb_transaksi.transaksi_tanggal 
+FROM tb_transaksi 
+INNER JOIN tb_user ON tb_transaksi.user_id = tb_user.user_id 
+INNER JOIN tb_payment ON tb_transaksi.payment_id = tb_payment.payment_id INNER JOIN tb_villa ON tb_transaksi.villa_id = tb_villa.villa_id
